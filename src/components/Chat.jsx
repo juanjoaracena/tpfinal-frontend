@@ -70,22 +70,30 @@ export default function Chat() {
           <div className="popup">
             <h2>Configuración de Chat</h2>
             <h3>Cambiar tema:</h3>
-            <select name="" id="">
-              <option value="">Claro</option>
-              <option value="">Oscuro</option>
-            </select><br></br>
-            <button onClick={handleClosePopup}>Cerrar</button>
-          </div>
-          import ThemeToggle from './ThemeToggle';
-
-// ...
-<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
+            <div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
   <div>
     <div style={{ fontWeight: 600 }}>Tema</div>
     <div style={{ color:'var(--muted)', fontSize: 14 }}>Cambiar entre claro y oscuro</div>
   </div>
   <ThemeToggle />
 </div>
+            {/*<select name="" id="">
+              <option value="">Claro</option>
+              <option value="">Oscuro</option>
+            </select><br></br>
+            <button onClick={handleClosePopup}>Cerrar</button>*/}
+
+          </div>
+          import ThemeToggle from './ThemeToggle';
+
+// ...
+{/*<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
+  <div>
+    <div style={{ fontWeight: 600 }}>Tema</div>
+    <div style={{ color:'var(--muted)', fontSize: 14 }}>Cambiar entre claro y oscuro</div>
+  </div>
+  <ThemeToggle />
+</div>*/}
 
         </section>
       }
