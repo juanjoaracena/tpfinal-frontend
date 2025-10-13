@@ -88,23 +88,8 @@ export default function Chat() {
   <FontSelect />
 </div>
 
-{/* Tamaño de fuente */}
-<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginTop:12 }}>
-  <div>
-    <div style={{ fontWeight: 600 }}>Tamaño</div>
-    <div style={{ color:'var(--muted)', fontSize: 14 }}>Pequeña / Normal / Grande</div>
-  </div>
-  <FontSizeSelect />
-</div>
 
-{/* Densidad/Espaciado */}
-<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginTop:12 }}>
-  <div>
-    <div style={{ fontWeight: 600 }}>Densidad</div>
-    <div style={{ color:'var(--muted)', fontSize: 14 }}>Compacta / Cómoda / Amplia</div>
-  </div>
-  <DensitySelect />
-</div>
+
             {/*<select name="" id="">
               <option value="">Claro</option>
               <option value="">Oscuro</option>
@@ -114,7 +99,7 @@ export default function Chat() {
           </div>
           
 
-// ...
+
 {/*<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
   <div>
     <div style={{ fontWeight: 600 }}>Tema</div>
