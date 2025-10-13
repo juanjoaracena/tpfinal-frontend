@@ -80,13 +80,13 @@ export default function Chat() {
   </div>
   <ThemeToggle />
 </div>
-
+ <button onClick={handleClosePopup}>Cerrar</button>
 
             {/*<select name="" id="">
               <option value="">Claro</option>
               <option value="">Oscuro</option>
             </select><br></br>
-            <button onClick={handleClosePopup}>Cerrar</button>*/}
+           */}
 
           </div>
           
