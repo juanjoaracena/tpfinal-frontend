@@ -2,6 +2,9 @@ import { useState } from "react"
 import { useChat } from "../context/ChatContext"
 import { Link, useNavigate } from "react-router-dom"
 import ThemeToggle from './ThemeToggle'
+import FontSelect from './FontSelect'
+import FontSizeSelect from './FontSizeSelect'
+import DensitySelect from './DensitySelect'
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
@@ -76,6 +79,31 @@ export default function Chat() {
     <div style={{ color:'var(--muted)', fontSize: 14 }}>Cambiar entre claro y oscuro</div>
   </div>
   <ThemeToggle />
+</div>
+<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginTop:12 }}>
+  <div>
+    <div style={{ fontWeight: 600 }}>Tipografía</div>
+    <div style={{ color:'var(--muted)', fontSize: 14 }}>Elegí la fuente de la app</div>
+  </div>
+  <FontSelect />
+</div>
+
+{/* Tamaño de fuente */}
+<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginTop:12 }}>
+  <div>
+    <div style={{ fontWeight: 600 }}>Tamaño</div>
+    <div style={{ color:'var(--muted)', fontSize: 14 }}>Pequeña / Normal / Grande</div>
+  </div>
+  <FontSizeSelect />
+</div>
+
+{/* Densidad/Espaciado */}
+<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginTop:12 }}>
+  <div>
+    <div style={{ fontWeight: 600 }}>Densidad</div>
+    <div style={{ color:'var(--muted)', fontSize: 14 }}>Compacta / Cómoda / Amplia</div>
+  </div>
+  <DensitySelect />
 </div>
             {/*<select name="" id="">
               <option value="">Claro</option>

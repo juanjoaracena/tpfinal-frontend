@@ -1,3 +1,39 @@
+:root{
+  /* … tus variables existentes … */
+  /* Tipografía base */
+  --font: var(--font-sans);
+  --font-size: 16px;      /* tamaño base */
+  --line-height: 1.55;    /* interlineado base */
+
+  /* Densidad / espaciado */
+  --space-1: 6px;         /* espaciado chico */
+  --space-2: 10px;        /* espaciado medio */
+  --space-3: 16px;        /* espaciado grande */
+
+  /* Componentes (puede reutilizar spacing) */
+  --btn-px: var(--space-2);
+  --btn-py: 8px;
+  --card-pad: var(--space-3);
+}
+
+body{
+  font-family: var(--font);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+}
+
+/* Usa las variables en tus utilidades existentes */
+.btn{
+  padding: var(--btn-py) var(--btn-px);
+}
+.card{
+  padding: var(--card-pad);
+}
+
+/* Ejemplos de aplicación suave (ajustá donde necesites) */
+.chat-header{ padding: var(--space-2) var(--space-3); }
+.chat-footer form{ gap: var(--space-2); }
+.chat-messages{ padding: var(--space-3); }
 * {
   margin: 0;
   padding: 0;
