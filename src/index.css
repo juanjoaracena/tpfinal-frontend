@@ -4,6 +4,54 @@
   box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+:root{
+  --bg:#ffffff;
+  --text:#0f1115;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --primary:#007bff;
+  --header:#ffffff;
+  --bubble:#cef6ff;
+  --surface:#fafafa;
+}
+
+.dark{
+  --bg:#0b0c0f;
+  --text:#f3f4f6;
+  --card:#0f1115;
+  --muted:#9ca3af;
+  --border:#283241;
+  --primary:#4f8cff;
+  --header:#0f1115;
+  --bubble:#123047;
+  --surface:#0d0f13;
+}
+
+html, body, #root { height: 100%; }
+body{
+  background: var(--bg);
+  color: var(--text);
+  transition: background .2s ease, color .2s ease;
+}
+
+/* utilidades */
+.card{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.btn{
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: var(--text);
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn:hover { opacity:.95; }
+
 
 .app {
   display: flex;
@@ -293,4 +341,47 @@ form .text-info {
   .popup {
     width: 80%;
   }
+}
+.sidebar{
+  background-color: var(--card);
+  border-right: 1px solid var(--border);
+}
+.user:hover{ background-color: rgba(0,0,0,.06); }
+.dark .user:hover{ background-color: rgba(255,255,255,.06); }
+
+.chat-header{
+  background-color: var(--header);
+  border-bottom: 1px solid var(--border);
+}
+.chat-actions button{ color: var(--text); }
+
+.chat-messages{
+  background-color: var(--surface);
+}
+.message{
+  background-color: var(--bubble);
+}
+.message .time{ color: var(--muted); }
+
+.chat-footer{
+  border-top: 1px solid var(--border);
+}
+.chat-footer input{
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.chat-footer button{
+  background-color: var(--primary);
+}
+
+.cont-popup{ backdrop-filter: blur(2px); }
+.popup{
+  background-color: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.popup button{
+  background-color: var(--primary);
+  border: 1px solid var(--border);
 }

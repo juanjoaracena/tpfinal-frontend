@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useChat } from "../context/ChatContext"
 import { Link, useNavigate } from "react-router-dom"
+import ThemeToggle from './ThemeToggle'
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
@@ -75,6 +76,17 @@ export default function Chat() {
             </select><br></br>
             <button onClick={handleClosePopup}>Cerrar</button>
           </div>
+          import ThemeToggle from './ThemeToggle';
+
+// ...
+<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
+  <div>
+    <div style={{ fontWeight: 600 }}>Tema</div>
+    <div style={{ color:'var(--muted)', fontSize: 14 }}>Cambiar entre claro y oscuro</div>
+  </div>
+  <ThemeToggle />
+</div>
+
         </section>
       }
       <div className="chat">
