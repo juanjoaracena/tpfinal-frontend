@@ -1,10 +1,10 @@
 import { useState } from "react"
 import { useChat } from "../context/ChatContext"
 import { Link, useNavigate } from "react-router-dom"
-import ThemeToggle from './ThemeToggle'
 import FontSelect from './FontSelect'
 import FontSizeSelect from './FontSizeSelect'
 import DensitySelect from './DensitySelect'
+import ThemeToggle from './ThemeToggle'
 
 export default function Chat() {
   const [msg, setMsg] = useState("")
