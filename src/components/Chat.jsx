@@ -84,7 +84,7 @@ export default function Chat() {
             <button onClick={handleClosePopup}>Cerrar</button>*/}
 
           </div>
-          import ThemeToggle from './ThemeToggle';
+          
 
 // ...
 {/*<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12 }}>
