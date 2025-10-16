@@ -79,14 +79,6 @@ export default function Chat() {
     <div style={{ color:'var(--muted)', fontSize: 14 }}>Cambiar entre claro y oscuro</div>
   </div>
   <ThemeToggle />
-</div>
-<div className="card" style={{ display:'flex', alignItems:'center', justifyContent:'space-between', gap:12, marginTop:12 }}>
-  <div>
-    <div style={{ fontWeight: 600 }}>Tipografía</div>
-    <div style={{ color:'var(--muted)', fontSize: 14 }}>Elegí la fuente de la app</div>
-  </div>
-  <FontSelect />
-</div>
  <button onClick={handleClosePopup}>Cerrar</button>
 
             {/*<select name="" id="">
