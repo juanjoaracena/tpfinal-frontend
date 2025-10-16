@@ -27,7 +27,7 @@ export default function Chat() {
   }
 
   // 3. Manejo del input
-  const handleChange = (event) => {
+  function handleChange(event) {
     setMsg(event.target.value)
   }
 
